@@ -12,15 +12,15 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
+<script src="https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.min.js"></script>
 <script src="https://unpkg.com/skinview3d/bundles/skinview3d.bundle.js"></script>
 
 </head>
 
 <body>
 
-<div class="intro">
-<h1>WELCOME TO ZAEMON WORLD</h1>
-</div>
+<canvas id="mc-bg"></canvas>
+<canvas id="mc-player"></canvas>
 
 <header>
 
@@ -39,7 +39,6 @@
 
 </header>
 
-
 <section class="hero">
 
 <img src="images/pig.png" class="mascot">
@@ -50,7 +49,7 @@
 
 <div class="stats">
 <p>Subscribers</p>
-<h2 id="subs">Loading...</h2>
+<h2 id="subs">12.9K+</h2>
 </div>
 
 <div class="buttons">
@@ -71,9 +70,8 @@
 
 <p>
 
-Aditya, widely known as <b>Zaemon</b>, is a passionate Minecraft creator from India, born in 2008. With a deep love for playing Minecraft, Zaemon enjoys sharing exciting game content and creations with the community.
-
-Proud of his roots and creativity, he regularly uploads Minecraft videos and inspires others to explore their imagination within the game.
+Aditya, widely known as Zaemon, is a passionate Minecraft creator from India, born in 2008.  
+He enjoys sharing Minecraft gameplay and inspiring creativity in the community.
 
 </p>
 
@@ -86,18 +84,6 @@ Proud of his roots and creativity, he regularly uploads Minecraft videos and ins
 <h2>Latest Videos</h2>
 
 <div id="video-container" class="video-grid"></div>
-
-</section>
-
-
-
-<section id="player" class="section">
-
-<h2>Zaemon Minecraft Player</h2>
-
-<div id="player-viewer"></div>
-
-<p>Click the player to attack ⚔</p>
 
 </section>
 
