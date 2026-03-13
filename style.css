@@ -1,176 +1,103 @@
 body{
-
 margin:0;
 font-family:Orbitron;
-background:#0a0a0a;
 color:white;
 text-align:center;
-
-background-image:
-linear-gradient(rgba(150,0,255,0.08) 1px, transparent 1px),
-linear-gradient(90deg, rgba(150,0,255,0.08) 1px, transparent 1px);
-
-background-size:40px 40px;
-
+background:black;
 }
 
-
-
-.intro{
-
+#mc-bg{
 position:fixed;
+top:0;
+left:0;
 width:100%;
 height:100%;
-background:black;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:40px;
-color:#bb00ff;
-z-index:999;
-
-animation:introFade 3s forwards;
-
+z-index:-2;
 }
 
-@keyframes introFade{
-
-0%{opacity:1}
-80%{opacity:1}
-100%{opacity:0;visibility:hidden}
-
+#mc-player{
+position:fixed;
+bottom:20px;
+right:20px;
+width:220px;
+height:300px;
+z-index:-1;
 }
-
-
 
 header{
-
 display:flex;
 justify-content:space-between;
 padding:20px 60px;
-
 }
 
 .logo{
-
 color:#bb00ff;
 text-shadow:0 0 20px #bb00ff;
-
 }
 
 nav a{
-
 margin-left:25px;
 color:white;
 text-decoration:none;
-
 }
 
-
-
 .hero{
-
 margin-top:120px;
-
 }
 
 .hero h1{
-
 font-size:80px;
-
 }
 
 .mascot{
-
 width:220px;
-
 }
 
-
-
 .btn{
-
 background:#bb00ff;
 padding:12px 25px;
 color:white;
 text-decoration:none;
 margin:10px;
 display:inline-block;
-
 }
 
 .btn2{
-
 border:2px solid #bb00ff;
 padding:12px 25px;
 color:white;
 text-decoration:none;
-
 }
-
-
 
 .section{
-
 padding:100px;
-
 }
 
-
-
 .video-grid{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
 padding:40px;
-
 }
 
 .video-grid img{
-
 width:100%;
 border:2px solid #bb00ff;
 cursor:pointer;
-
 }
 
-
-
 .gallery{
-
 display:flex;
 justify-content:center;
 gap:30px;
-
 }
 
 .gallery img{
-
 width:300px;
 border:2px solid #bb00ff;
-
 }
-
-
-
-#player-viewer{
-
-width:300px;
-height:400px;
-margin:auto;
-
-border:2px solid #bb00ff;
-
-box-shadow:0 0 30px #bb00ff;
-
-}
-
-
 
 footer{
-
 padding:30px;
 color:#888;
-
 }
